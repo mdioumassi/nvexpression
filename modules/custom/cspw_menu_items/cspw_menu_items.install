@@ -1,0 +1,124 @@
+<?php
+/**
+ * @file
+ * Contains cspw_vocabulaires_install.
+ */
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+
+/**
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function cspw_menu_items_install()
+{
+    // A ne pas supprimer : code ré-utilisable
+    /*
+    cspw_menu_items_update_8002();
+    */
+}
+
+/**
+ * hook update pour la creation des termes pour les items menu
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function cspw_menu_items_update_8002(){
+
+    // A ne pas supprimer : code ré-utilisable
+    /*
+    // The name of our menu
+    $menu_link = MenuLinkContent::create([
+        'title' => 'Administration Webmestre',
+        'link' => ['uri' => 'internal:/admin/menu'],
+        'menu_name' => 'administration-webmestre',
+        'parent' => 'system.admin',
+        'expanded' => TRUE,
+        'weight' => 0,
+    ]);
+
+    $menu_link->save();
+
+
+
+    // Create a array from fake nids for this example's sake.
+    // In a real life scenario you will want to use real data.
+    $items = ['0' => [
+                'firstLevel'=>['title'=>'Menus','link'=>''],
+                'secondLevel'=>[
+                    ['title'=>'Big menu','link'=>'admin/structure/menu/manage/big-menu'],
+                    ['title'=>'Block menu de droite','link'=>'admin/structure/menu/manage/menu-libre'],
+                    ['title'=>'Menu footer','link'=>'admin/structure/menu/manage/menu-footer'],
+                    ['title'=>'Menu header de droite','link'=>'admin/structure/menu/manage/menu-header-de-droite'],
+                    ['title'=>'Responsive menu','link'=>'admin/structure/menu/manage/responsive-menu'],
+                ]
+            ] ,
+            '1' => [
+                'firstLevel'=>['title'=>'Taxonomy','link'=>'admin/structure/taxonomy'],
+                'secondLevel'=>[]
+            ],
+            '2' => [
+                'firstLevel'=>['title'=>'Configuration du block Twitter','link'=>'admin/structure/block/manage/twitterblock'],
+                'secondLevel'=>[]
+            ],
+            '3' => [
+                'firstLevel'=>['title'=>'Configuration des Medias liens','link'=>'admin/structure/block/manage/socialmedialinks'],
+                'secondLevel'=>[]
+            ]
+            ];
+
+    foreach ($items as $id => $item) {
+        $menu_link_second = MenuLinkContent::create([
+            'title' => $item['firstLevel']['title'],
+            'link' => ['uri' => 'internal:/'.$item['firstLevel']['link']],
+            'menu_name' => 'administration-webmestre',
+            'expanded' => true,
+            'status' => TRUE,
+            'parent' => 'menu_link_content:' . $menu_link->uuid(),
+            'weight' => 0,
+        ]);
+        $menu_link_second->save();
+
+        foreach($item as $level=>$linkMenu) {
+           if($level =='secondLevel'){
+
+               foreach ($item[$level] as $indece=>$value) {
+                   $menu_link_third = MenuLinkContent::create([
+                       'title' => $value['title'],
+                       'link' => ['uri' => 'internal:/' . $value['link']],
+                       'menu_name' => 'administration-webmestre',
+                       'expanded' => true,
+                       'status' => TRUE,
+                       'parent' => 'menu_link_content:' . $menu_link_second->uuid(),
+                       'weight' => 0,
+                   ]);
+                   $menu_link_third->save();
+               }
+           }
+
+        }
+
+
+    }
+
+
+
+*/
+}
+
+/**
+ *  hook pour déinstaller le menu administration-webmestre
+ */
+function cspw_menu_items_uninstall()
+{
+
+    // A ne pas supprimer : code ré-utilisable
+
+    $mids = \Drupal::entityQuery('menu_link_content')
+        ->condition('menu_name', 'administration-webmestre')
+        ->sort('weight')
+        ->execute();
+
+    $controller = \Drupal::entityTypeManager()->getStorage('menu_link_content');
+    $entities = $controller->loadMultiple($mids);
+    $controller->delete($entities);
+
+
+}

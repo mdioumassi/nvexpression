@@ -1,0 +1,21 @@
+uuid: d3a2fe64-495f-4f28-82a3-a79c1d656441
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.page_standard
+  module:
+    - text
+id: node.page_standard.field_description
+field_name: field_description
+entity_type: node
+bundle: page_standard
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

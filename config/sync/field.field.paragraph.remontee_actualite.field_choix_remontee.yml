@@ -1,0 +1,21 @@
+uuid: 8f41064d-1f5e-411e-a157-2a82541e2a58
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_choix_remontee
+    - paragraphs.paragraphs_type.remontee_actualite
+  module:
+    - options
+id: paragraph.remontee_actualite.field_choix_remontee
+field_name: field_choix_remontee
+entity_type: paragraph
+bundle: remontee_actualite
+label: 'Choix remontée'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

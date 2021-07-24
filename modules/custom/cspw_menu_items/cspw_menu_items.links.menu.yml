@@ -1,0 +1,19 @@
+
+cspw_menu_items.webmestre:
+  title: 'Administration Webmestre'
+  description: 'Administration Webmestre'
+  url: internal:/
+  parent: system.admin
+  weight: 1
+cspw_menu_items.menus:
+  title: 'Menus'
+  description: 'Menus'
+  route_name: cspw_menu_items.menus
+  parent: cspw_menu_items.webmestre
+  weight: 2
+cspw_menu_items.menu.principale:
+  title: 'Menu principal'
+  description: 'Menu principal'
+  url: internal:/admin/structure/menu/manage/main
+  parent: cspw_menu_items.menus
+  weight: 3

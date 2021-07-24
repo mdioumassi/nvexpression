@@ -1,0 +1,52 @@
+<?php
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+function cspw_menu_items_form_block_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+
+    $user = \Drupal::currentUser()->getRoles();
+
+    if($form['settings']['provider']['#value'] == 'social_media_links'){
+       $form['actions']['submit']['#submit'][''] = 'cspw_menu_items_handler';
+        $form['menu_name_item']['#default_value'] ='socialmedialinks';
+   }else if($form['settings']['provider']['#value'] == 'twitter_block'){
+       $form['actions']['submit']['#submit'][''] = 'cspw_menu_items_handler';
+        $form['menu_name_item']['#default_value'] ='twitterblock';
+   }
+    else if($form['id']['#default_value'] == 'menudesboutons' && in_array("webmestre", $user)){
+        $form['actions']['submit']['#submit'][''] = 'cspw_menu_items_handler';
+        $form['menu_name_item']['#default_value'] ='menudesboutons';
+        $form['actions']['delete']['#access'] = FALSE;
+    }
+}
+
+/**
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function cspw_menu_items_handler(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    $block_name =  $form['menu_name_item']['#default_value'];
+   if(isset($block_name) && !empty($block_name)){
+       $base_url='/admin/structure/block/manage/'.$block_name;
+       $redirect = new RedirectResponse($base_url .'?destination=/admin/structure/block/manage/'.$block_name);
+       $redirect->send();
+   }
+
+}
+
+/**
+ * @param $form
+ * @param FormStateInterface $form_state
+ * @param $form_id
+ * Changemet du libellé du champ code.
+ */
+function cspw_menu_items_form_asset_injector_css_add_form_alter(&$form,FormStateInterface $form_state, $form_id){
+    // Changemet du libellé du champ.
+    $form['code']['#title'] = t('Ajout du css');
+}

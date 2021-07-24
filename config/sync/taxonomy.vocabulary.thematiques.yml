@@ -1,0 +1,8 @@
+uuid: 6c9ffff3-e500-476a-b3a5-7d7016c8acf0
+langcode: fr
+status: true
+dependencies: {  }
+name: Actualité
+vid: thematiques
+description: ''
+weight: 0

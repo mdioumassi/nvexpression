@@ -1,0 +1,33 @@
+uuid: ffc407e1-a34e-453b-9061-d36660bde96b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visuel
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.actualite
+id: node.actualite.field_visuel
+field_name: field_visuel
+entity_type: node
+bundle: actualite
+label: Visuel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

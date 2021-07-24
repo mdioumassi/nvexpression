@@ -1,0 +1,59 @@
+uuid: dae8c5d1-d56c-4759-82dd-86b6ada4c0de
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.remontee_actualite.field_bouton_contribuable
+    - field.field.paragraph.remontee_actualite.field_choix_remontee
+    - field.field.paragraph.remontee_actualite.field_remontee_de_contenu
+    - field.field.paragraph.remontee_actualite.field_themes
+    - field.field.paragraph.remontee_actualite.field_titre_du_bloc
+    - paragraphs.paragraphs_type.remontee_actualite
+  module:
+    - link
+id: paragraph.remontee_actualite.default
+targetEntityType: paragraph
+bundle: remontee_actualite
+mode: default
+content:
+  field_bouton_contribuable:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_choix_remontee:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_remontee_de_contenu:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_themes:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_titre_du_bloc:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

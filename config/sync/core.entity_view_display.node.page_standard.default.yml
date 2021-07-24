@@ -1,0 +1,58 @@
+uuid: 79dd7663-cd21-49dc-b690-2f381a6202e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page_standard.field_description
+    - field.field.node.page_standard.field_home_page
+    - field.field.node.page_standard.field_resume
+    - field.field.node.page_standard.field_visuel
+    - node.type.page_standard
+  module:
+    - text
+    - user
+id: node.page_standard.default
+targetEntityType: node
+bundle: page_standard
+mode: default
+content:
+  field_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_home_page:
+    weight: 102
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_resume:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_visuel:
+    type: entity_reference_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

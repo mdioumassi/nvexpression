@@ -1,0 +1,10 @@
+uuid: db52ce3d-3558-4379-be31-81443dfa7eb5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - path_alias
+id: path_alias.token
+label: Token
+targetEntityType: path_alias
+cache: true

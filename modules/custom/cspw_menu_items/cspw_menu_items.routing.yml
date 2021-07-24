@@ -1,0 +1,9 @@
+cspw_menu_items.menus:
+  path: '/webmestre/menus'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Menus'
+  requirements:
+    _role: 'webmestre + administrator'
+  options:
+    _admin_route: TRUE

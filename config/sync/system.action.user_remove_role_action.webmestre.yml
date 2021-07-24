@@ -1,0 +1,14 @@
+uuid: 1a8884d7-5f2a-4054-a61b-cbb9c425b9dc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.webmestre
+  module:
+    - user
+id: user_remove_role_action.webmestre
+label: 'Enlever le rôle webmestre des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webmestre

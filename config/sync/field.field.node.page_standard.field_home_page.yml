@@ -1,0 +1,23 @@
+uuid: 393b4436-62c5-4b22-acd9-bcfd645ca919
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_page
+    - node.type.page_standard
+id: node.page_standard.field_home_page
+field_name: field_home_page
+entity_type: node
+bundle: page_standard
+label: 'Page d''accueil'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

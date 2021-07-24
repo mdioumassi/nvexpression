@@ -1,0 +1,19 @@
+uuid: 2e65bb4c-6d1a-47b9-8160-efaef72325d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre_du_bloc
+    - paragraphs.paragraphs_type.remontee_actualite
+id: paragraph.remontee_actualite.field_titre_du_bloc
+field_name: field_titre_du_bloc
+entity_type: paragraph
+bundle: remontee_actualite
+label: 'Titre du bloc'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: df21c383-162e-4565-b460-2ae7f8880d32
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bouton_contribuable
+    - paragraphs.paragraphs_type.remontee_actualite
+  module:
+    - link
+id: paragraph.remontee_actualite.field_bouton_contribuable
+field_name: field_bouton_contribuable
+entity_type: paragraph
+bundle: remontee_actualite
+label: 'Bouton contribuable'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

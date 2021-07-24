@@ -1,0 +1,35 @@
+uuid: 079290b5-5479-4aba-8f69-f29adf3e2be0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actualite.field_date
+    - field.field.node.actualite.field_declasser
+    - field.field.node.actualite.field_description
+    - field.field.node.actualite.field_paragraphes
+    - field.field.node.actualite.field_resume
+    - field.field.node.actualite.field_themes
+    - field.field.node.actualite.field_visuel
+    - node.type.actualite
+  module:
+    - user
+id: node.actualite.teaser
+targetEntityType: node
+bundle: actualite
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date: true
+  field_declasser: true
+  field_description: true
+  field_paragraphes: true
+  field_resume: true
+  field_themes: true
+  field_visuel: true
+  langcode: true

@@ -1,0 +1,18 @@
+uuid: 8c136ad7-bf14-4034-96bf-d0e49275dc19
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_declasser
+field_name: field_declasser
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

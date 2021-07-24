@@ -1,0 +1,23 @@
+uuid: 981669d9-8b27-46ad-b163-35f2d51028e3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_declasser
+    - node.type.actualite
+id: node.actualite.field_declasser
+field_name: field_declasser
+entity_type: node
+bundle: actualite
+label: 'A déclasser'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

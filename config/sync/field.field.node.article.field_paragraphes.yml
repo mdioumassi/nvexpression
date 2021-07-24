@@ -1,0 +1,34 @@
+uuid: a951dc51-0381-4ca6-9de7-79ea3a1c9571
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphes
+    - node.type.article
+    - paragraphs.paragraphs_type.remontee_actualite
+  module:
+    - entity_reference_revisions
+id: node.article.field_paragraphes
+field_name: field_paragraphes
+entity_type: node
+bundle: article
+label: Paragraphes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      remontee_actualite: remontee_actualite
+    target_bundles_drag_drop:
+      from_library:
+        weight: 3
+        enabled: false
+      remontee_actualite:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -1,0 +1,15 @@
+uuid: 947398a9-1734-470a-8e71-1167fcaf5209
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: remontee_actualite
+label: 'Remontée actualité'
+icon_uuid: null
+icon_default: null
+description: 'Ce paragraphe remontera les actualités'
+behavior_plugins: {  }

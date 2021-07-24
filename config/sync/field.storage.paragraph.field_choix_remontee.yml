@@ -1,0 +1,30 @@
+uuid: b294f866-6622-44a0-ab0e-5d1257cd08c4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_choix_remontee
+field_name: field_choix_remontee
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: manuel
+      label: Manuelle
+    -
+      value: automatique
+      label: Automatique
+    -
+      value: dernieres_actualites
+      label: 'Dernières Actualités'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 4d15c1ab-9f21-4b58-89de-63dc90a59a88
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_visuel
+field_name: field_visuel
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: eea16450-8ccb-43f5-bf28-71436255618a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.actualite
+  module:
+    - text
+id: node.actualite.field_description
+field_name: field_description
+entity_type: node
+bundle: actualite
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: a58ed845-dfa1-4a88-96d2-5d3636ac58f2
+langcode: fr
+status: true
+dependencies: {  }
+name: Opinions
+vid: opinions
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 1f40c7fb-72d0-4c97-baab-e022a68e03ec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.actualite
+id: node.actualite.field_resume
+field_name: field_resume
+entity_type: node
+bundle: actualite
+label: Résumé
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

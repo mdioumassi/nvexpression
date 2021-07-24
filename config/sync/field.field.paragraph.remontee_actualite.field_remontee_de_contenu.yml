@@ -1,0 +1,29 @@
+uuid: 271f3755-6c68-46d3-910a-f4e1c673ec25
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_remontee_de_contenu
+    - node.type.actualite
+    - paragraphs.paragraphs_type.remontee_actualite
+id: paragraph.remontee_actualite.field_remontee_de_contenu
+field_name: field_remontee_de_contenu
+entity_type: paragraph
+bundle: remontee_actualite
+label: 'Remontée de contenu actualités'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actualite: actualite
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

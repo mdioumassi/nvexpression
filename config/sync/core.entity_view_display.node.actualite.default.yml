@@ -1,0 +1,91 @@
+uuid: 1d6a53cc-4521-43e1-a7a2-6da607112e3e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.actualite.field_date
+    - field.field.node.actualite.field_declasser
+    - field.field.node.actualite.field_description
+    - field.field.node.actualite.field_paragraphes
+    - field.field.node.actualite.field_resume
+    - field.field.node.actualite.field_themes
+    - field.field.node.actualite.field_visuel
+    - node.type.actualite
+  module:
+    - datetime
+    - entity_reference_revisions
+    - media
+    - text
+    - user
+id: node.actualite.default
+targetEntityType: node
+bundle: actualite
+mode: default
+content:
+  field_date:
+    weight: 2
+    label: visually_hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_declasser:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_description:
+    weight: 3
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_paragraphes:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_resume:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_themes:
+    weight: 6
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_visuel:
+    weight: 0
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
