@@ -1,0 +1,36 @@
+uuid: 73aa34b6-4c19-434f-85e3-cb85469a16dd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lien_footer.field_section_footer
+    - field.field.paragraph.lien_footer.field_url
+    - paragraphs.paragraphs_type.lien_footer
+  module:
+    - link
+id: paragraph.lien_footer.default
+targetEntityType: paragraph
+bundle: lien_footer
+mode: default
+content:
+  field_section_footer:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

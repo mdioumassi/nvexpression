@@ -19,7 +19,7 @@ mode: default
 content:
   field_bouton_contribuable:
     weight: 0
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -31,14 +31,14 @@ content:
     region: content
   field_choix_remontee:
     weight: 4
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_remontee_de_contenu:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -46,7 +46,7 @@ content:
     region: content
   field_themes:
     weight: 2
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -54,7 +54,7 @@ content:
     region: content
   field_titre_du_bloc:
     weight: 3
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

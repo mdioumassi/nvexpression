@@ -1,0 +1,133 @@
+uuid: 5dd7d556-3c52-4f23-be89-dc2cbfec5061
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reseaux_sociaux
+    - node.type.footer
+  module:
+    - social_media_links_field
+id: node.footer.field_reseaux_sociaux
+field_name: field_reseaux_sociaux
+entity_type: node
+bundle: footer
+label: 'Réseaux sociaux'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    platform: null
+    value: null
+    platform_values:
+      facebook:
+        value: ''
+      youtube:
+        value: ''
+      instagram:
+        value: ''
+      whatsapp:
+        value: ''
+      linkedin:
+        value: ''
+default_value_callback: ''
+settings:
+  iconset: 'fontawesome:2x'
+  platforms:
+    vimeo:
+      description: ''
+      weight: '-10'
+      enabled: 0
+    facebook:
+      enabled: '1'
+      description: ''
+      weight: '-9'
+    flickr:
+      description: ''
+      weight: '-8'
+      enabled: 0
+    gitlab:
+      description: ''
+      weight: '-7'
+      enabled: 0
+    youtube:
+      enabled: '1'
+      description: ''
+      weight: '-6'
+    rss:
+      description: ''
+      weight: '-5'
+      enabled: 0
+    drupal:
+      description: ''
+      weight: '-4'
+      enabled: 0
+    tumblr:
+      description: ''
+      weight: '-3'
+      enabled: 0
+    instagram:
+      enabled: '1'
+      description: ''
+      weight: '-2'
+    whatsapp:
+      enabled: '1'
+      description: ''
+      weight: '-1'
+    youtube_channel:
+      description: ''
+      weight: '0'
+      enabled: 0
+    xing:
+      description: ''
+      weight: '1'
+      enabled: 0
+    behance:
+      description: ''
+      weight: '2'
+      enabled: 0
+    website:
+      description: ''
+      weight: '3'
+      enabled: 0
+    contact:
+      description: ''
+      weight: '4'
+      enabled: 0
+    linkedin:
+      enabled: '1'
+      description: ''
+      weight: '5'
+    email:
+      description: ''
+      weight: '6'
+      enabled: 0
+    vkontakte:
+      description: ''
+      weight: '7'
+      enabled: 0
+    twitter:
+      description: ''
+      weight: '8'
+      enabled: 0
+    bitbucket:
+      description: ''
+      weight: '9'
+      enabled: 0
+    slideshare:
+      description: ''
+      weight: '10'
+      enabled: 0
+    github:
+      description: ''
+      weight: '11'
+      enabled: 0
+    googleplus:
+      description: ''
+      weight: '12'
+      enabled: 0
+    pinterest:
+      description: ''
+      weight: '13'
+      enabled: 0
+field_type: social_media_links_field

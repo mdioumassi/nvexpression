@@ -1,0 +1,17 @@
+uuid: 9e3438d2-4270-4ceb-a9a3-fd7fdf1d3b11
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Footer
+type: footer
+description: "Ce type de contenu va gérer les footers du site.\r\nUn seul footer doit être publié à la fois.\t\r\n"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,28 @@
+uuid: 6a1da7ed-dee7-499a-98ca-57b9076a0398
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph._colonne_de_menu.field_lien_footer
+    - field.field.paragraph._colonne_de_menu.field_texte
+    - field.field.paragraph._colonne_de_menu.field_url
+    - paragraphs.paragraphs_type._colonne_de_menu
+  module:
+    - entity_reference_revisions
+id: paragraph._colonne_de_menu.default
+targetEntityType: paragraph
+bundle: _colonne_de_menu
+mode: default
+content:
+  field_lien_footer:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_texte: true
+  field_url: true

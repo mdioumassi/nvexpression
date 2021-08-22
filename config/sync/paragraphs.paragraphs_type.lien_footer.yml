@@ -1,0 +1,10 @@
+uuid: 81cb9d5c-fe60-4ee2-9b13-35abca7c63e3
+langcode: fr
+status: true
+dependencies: {  }
+id: lien_footer
+label: 'Lien footer'
+icon_uuid: null
+icon_default: null
+description: 'Paragraphe pour ajouter un lien dans le footer.'
+behavior_plugins: {  }

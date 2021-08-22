@@ -1,0 +1,23 @@
+uuid: c0d026a7-6547-4919-8516-3ce12b3794ca
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liens
+    - node.type.footer
+  module:
+    - link
+id: node.footer.field_liens
+field_name: field_liens
+entity_type: node
+bundle: footer
+label: 'Liens de gauche'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

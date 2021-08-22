@@ -1,0 +1,40 @@
+uuid: ac843fe1-d2cc-4dc0-b221-d2039134d673
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lien_footer
+    - paragraphs.paragraphs_type._colonne_de_menu
+    - paragraphs.paragraphs_type.lien_footer
+  module:
+    - entity_reference_revisions
+id: paragraph._colonne_de_menu.field_lien_footer
+field_name: field_lien_footer
+entity_type: paragraph
+bundle: _colonne_de_menu
+label: 'Liens de menu footer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      lien_footer: lien_footer
+    target_bundles_drag_drop:
+      _colonne_de_menu:
+        weight: 8
+        enabled: false
+      from_library:
+        weight: 5
+        enabled: false
+      lien_footer:
+        enabled: true
+        weight: 6
+      remontee_actualite:
+        weight: 7
+        enabled: false
+field_type: entity_reference_revisions

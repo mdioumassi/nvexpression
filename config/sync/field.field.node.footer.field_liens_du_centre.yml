@@ -1,0 +1,23 @@
+uuid: bb6669e9-d2a8-45de-a5d6-cc51c5e738d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liens_du_centre
+    - node.type.footer
+  module:
+    - link
+id: node.footer.field_liens_du_centre
+field_name: field_liens_du_centre
+entity_type: node
+bundle: footer
+label: 'Liens du centre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

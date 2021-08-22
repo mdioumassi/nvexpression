@@ -1,0 +1,8 @@
+uuid: ae175f69-5e07-492b-873f-caf9839d875d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Section Footer Responsive'
+vid: section_footer_responsive
+description: "Liste des termes pour le menu footer.\t"
+weight: 0

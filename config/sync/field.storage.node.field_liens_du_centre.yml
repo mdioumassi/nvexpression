@@ -1,0 +1,19 @@
+uuid: 6ca1bb1e-c499-4686-9dd1-46594293810b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_liens_du_centre
+field_name: field_liens_du_centre
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

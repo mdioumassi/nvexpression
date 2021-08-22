@@ -1,0 +1,11 @@
+uuid: d7f5be65-42d5-4bee-9650-1c1b3af37a79
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.section_footer_responsive
+id: taxonomy_term.section_footer_responsive
+target_entity_type_id: taxonomy_term
+target_bundle: section_footer_responsive
+default_langcode: site_default
+language_alterable: false

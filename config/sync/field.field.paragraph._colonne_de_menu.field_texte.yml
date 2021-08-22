@@ -1,0 +1,19 @@
+uuid: e17f5bb0-5dac-4c0f-8fee-4665e6e1ec0f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte
+    - paragraphs.paragraphs_type._colonne_de_menu
+id: paragraph._colonne_de_menu.field_texte
+field_name: field_texte
+entity_type: paragraph
+bundle: _colonne_de_menu
+label: 'Titre de la colonne'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 436e83d0-6ba3-4fb3-98bc-66f888cb9d99
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.lien_footer
+  module:
+    - link
+id: paragraph.lien_footer.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: lien_footer
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

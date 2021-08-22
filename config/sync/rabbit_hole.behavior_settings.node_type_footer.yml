@@ -1,0 +1,14 @@
+uuid: 29002582-7ef6-419a-9f44-29d93a1f96e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.footer
+id: node_type_footer
+entity_type_id: node_type
+entity_id: footer
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

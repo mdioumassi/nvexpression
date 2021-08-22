@@ -1,0 +1,77 @@
+uuid: e1ef0ef7-307e-4cad-bb99-59890911ff59
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.footer.field_lien
+    - field.field.node.footer.field_liens
+    - field.field.node.footer.field_liens_du_centre
+    - field.field.node.footer.field_logo
+    - field.field.node.footer.field_reseaux_sociaux
+    - node.type.footer
+  module:
+    - link
+    - social_media_links_field
+    - user
+id: node.footer.default
+targetEntityType: node
+bundle: footer
+mode: default
+content:
+  field_lien:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_liens:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_liens_du_centre:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_reseaux_sociaux:
+    weight: 4
+    label: hidden
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
+    region: content
+hidden:
+  langcode: true
+  links: true

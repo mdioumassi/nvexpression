@@ -1,0 +1,23 @@
+uuid: cf1bbd92-e1d4-4557-b6e9-3a069ae39b2f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type._colonne_de_menu
+  module:
+    - link
+id: paragraph._colonne_de_menu.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: _colonne_de_menu
+label: URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

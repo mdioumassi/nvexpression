@@ -1,0 +1,10 @@
+uuid: 1a41ea44-b54a-4095-87c1-e9893787c462
+langcode: fr
+status: true
+dependencies: {  }
+id: _colonne_de_menu
+label: " \tColonne de menu"
+icon_uuid: null
+icon_default: null
+description: 'Paragraphe pour créer des colonnes de menu (Comme sur le footer).'
+behavior_plugins: {  }

@@ -1,0 +1,79 @@
+uuid: 6a13448c-7fd4-4a0a-87ce-6fd3f4562d7b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.footer.field_lien
+    - field.field.node.footer.field_liens
+    - field.field.node.footer.field_liens_du_centre
+    - field.field.node.footer.field_logo
+    - field.field.node.footer.field_reseaux_sociaux
+    - node.type.footer
+  module:
+    - link
+    - media_library
+    - path
+    - social_media_links_field
+id: node.footer.default
+targetEntityType: node
+bundle: footer
+mode: default
+content:
+  field_lien:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_liens:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_liens_du_centre:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_logo:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_reseaux_sociaux:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
