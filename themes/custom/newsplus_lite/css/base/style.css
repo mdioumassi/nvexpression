@@ -1,0 +1,16 @@
+#menu-task {
+    position: fixed;
+    top: 25rem;
+    left: 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 10px;
+    background-color: #fff;
+    z-index: 100;
+}
+#menu-task ul{
+    list-style-type: none !important;
+    display: flex;
+}
+#menu-task ul li{
+    padding-top: 12px;
+}

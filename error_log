@@ -92,3 +92,61 @@ WHERE (media_field_data.status = 1 OR (media_field_data.uid = 1 AND 1 <> 0 AND *
 [10-Aug-2021 12:25:32 Europe/Paris] Uncaught PHP Exception Twig\Error\LoaderError: "Template "themes/custom/newsplus_lite/templates/block--system-branding-block.html.twig" is not defined." at /home/u600345197/domains/dioumassi.website/public_html/nvexpression/themes/custom/newsplus_lite/templates/page.html.twig line 112
 [10-Aug-2021 13:13:44 Europe/Paris] Uncaught PHP Exception Exception: "Object of type Drupal\Core\Field\FieldItemList cannot be printed." at /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Template/TwigExtension.php line 425
 [10-Aug-2021 17:28:36 Europe/Paris] Uncaught PHP Exception Exception: "Object of type Drupal\node\Entity\Node cannot be printed." at /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Template/TwigExtension.php line 425
+[27-Sep-2021 16:49:46 Europe/Paris] Error: Class 'Drupal\hook_event_dispatcher\HookEventDispatcherInterface' not found in /home/u600345197/domains/dioumassi.website/public_html/nvexpression/modules/custom/nvexp_content/src/EventSubscriber/WidgetFormAlterEventSubScriber.php on line 23 #0 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/DependencyInjection/Compiler/RegisterEventSubscribersPass.php(37): Drupal\nvexp_content\EventSubscriber\WidgetFormAlterEventSubScriber::getSubscribedEvents()
+#1 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/vendor/symfony/dependency-injection/Compiler/Compiler.php(94): Drupal\Core\DependencyInjection\Compiler\RegisterEventSubscribersPass->process(Object(Drupal\Core\DependencyInjection\ContainerBuilder))
+#2 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/vendor/symfony/dependency-injection/ContainerBuilder.php(762): Symfony\Component\DependencyInjection\Compiler\Compiler->compile(Object(Drupal\Core\DependencyInjection\ContainerBuilder))
+#3 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/DrupalKernel.php(1303): Symfony\Component\DependencyInjection\ContainerBuilder->compile()
+#4 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/DrupalKernel.php(908): Drupal\Core\DrupalKernel->compileContainer()
+#5 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/DrupalKernel.php(829): Drupal\Core\DrupalKernel->initializeContainer()
+#6 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Extension/ModuleInstaller.php(598): Drupal\Core\DrupalKernel->updateModules(Array, Array)
+#7 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Extension/ModuleInstaller.php(222): Drupal\Core\Extension\ModuleInstaller->updateKernel(Array)
+#8 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/ProxyClass/Extension/ModuleInstaller.php(83): Drupal\Core\Extension\ModuleInstaller->install(Array, true)
+#9 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/modules/system/src/Form/ModulesListForm.php(473): Drupal\Core\ProxyClass\Extension\ModuleInstaller->install(Array)
+#10 [internal function]: Drupal\system\Form\ModulesListForm->submitForm(Array, Object(Drupal\Core\Form\FormState))
+#11 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Form/FormSubmitter.php(113): call_user_func_array(Array, Array)
+#12 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Form/FormSubmitter.php(51): Drupal\Core\Form\FormSubmitter->executeSubmitHandlers(Array, Object(Drupal\Core\Form\FormState))
+#13 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Form/FormBuilder.php(593): Drupal\Core\Form\FormSubmitter->doSubmitForm(Array, Object(Drupal\Core\Form\FormState))
+#14 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Form/FormBuilder.php(321): Drupal\Core\Form\FormBuilder->processForm('system_modules', Array, Object(Drupal\Core\Form\FormState))
+#15 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Controller/FormController.php(73): Drupal\Core\Form\FormBuilder->buildForm(Object(Drupal\system\Form\ModulesListForm), Object(Drupal\Core\Form\FormState))
+#16 [internal function]: Drupal\Core\Controller\FormController->getContentResult(Object(Symfony\Component\HttpFoundation\Request), Object(Drupal\Core\Routing\RouteMatch))
+#17 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php(123): call_user_func_array(Array, Array)
+#18 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Render/Renderer.php(578): Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}()
+#19 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php(124): Drupal\Core\Render\Renderer->executeInRenderContext(Object(Drupal\Core\Render\RenderContext), Object(Closure))
+#20 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php(97): Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->wrapControllerExecutionInRenderContext(Array, Array)
+#21 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/vendor/symfony/http-kernel/HttpKernel.php(158): Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}()
+#22 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/vendor/symfony/http-kernel/HttpKernel.php(80): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#23 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/StackMiddleware/Session.php(57): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#24 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(47): Drupal\Core\StackMiddleware\Session->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#25 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/modules/page_cache/src/StackMiddleware/PageCache.php(106): Drupal\Core\StackMiddleware\KernelPreHandle->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#26 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/modules/page_cache/src/StackMiddleware/PageCache.php(85): Drupal\page_cache\StackMiddleware\PageCache->pass(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#27 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(47): Drupal\page_cache\StackMiddleware\PageCache->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#28 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(52): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#29 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#30 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/DrupalKernel.php(716): Stack\StackedHttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#31 /home/u600345197/domains/dioumassi.website/public_html/nvexpression/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#32 {main}
+[27-Sep-2021 17:00:03 Europe/Paris] Uncaught PHP Exception ReflectionException: "Class \Drupal\nvexp_content\Controller\AjaxController does not exist" at /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Entity/EntityResolverManager.php line 128
+[28-Sep-2021 10:57:43 Europe/Paris] Uncaught PHP Exception Twig\Error\LoaderError: "Template "@digiteurs/layout/partials/footer.html.twig" is not defined in "themes/custom/newsplus_lite/templates/layout/page.html.twig" at line 99." at /home/u600345197/domains/dioumassi.website/public_html/nvexpression/vendor/twig/twig/src/Loader/ChainLoader.php line 98
+[28-Sep-2021 11:22:29 Europe/Paris] Uncaught PHP Exception Drupal\Core\Entity\EntityStorageException: "SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction: INSERT INTO "menu_link_content_data" ("id", "revision_id", "bundle", "langcode", "enabled", "title", "description", "menu_name", "link__uri", "link__title", "link__options", "external", "rediscover", "weight", "expanded", "parent", "changed", "default_langcode", "revision_translation_affected") VALUES (:db_insert_placeholder_0, :db_insert_placeholder_1, :db_insert_placeholder_2, :db_insert_placeholder_3, :db_insert_placeholder_4, :db_insert_placeholder_5, :db_insert_placeholder_6, :db_insert_placeholder_7, :db_insert_placeholder_8, :db_insert_placeholder_9, :db_insert_placeholder_10, :db_insert_placeholder_11, :db_insert_placeholder_12, :db_insert_placeholder_13, :db_insert_placeholder_14, :db_insert_placeholder_15, :db_insert_placeholder_16, :db_insert_placeholder_17, :db_insert_placeholder_18); Array
+(
+    [:db_insert_placeholder_0] => 5
+    [:db_insert_placeholder_1] => 5
+    [:db_insert_placeholder_2] => menu_link_content
+    [:db_insert_placeholder_3] => fr
+    [:db_insert_placeholder_4] => 1
+    [:db_insert_placeholder_5] => Orange1
+    [:db_insert_placeholder_6] => 
+    [:db_insert_placeholder_7] => main
+    [:db_insert_placeholder_8] => internal:/
+    [:db_insert_placeholder_9] => 
+    [:db_insert_placeholder_10] => a:0:{}
+    [:db_insert_placeholder_11] => 0
+    [:db_insert_placeholder_12] => 1
+    [:db_insert_placeholder_13] => 0
+    [:db_insert_placeholder_14] => 0
+    [:db_insert_placeholder_15] => 
+    [:db_insert_placeholder_16] => 1632820948
+    [:db_insert_placeholder_17] => 1
+    [:db_insert_placeholder_18] => 1
+)
+" at /home/u600345197/domains/dioumassi.website/public_html/nvexpression/core/lib/Drupal/Core/Entity/Sql/SqlContentEntityStorage.php line 810
