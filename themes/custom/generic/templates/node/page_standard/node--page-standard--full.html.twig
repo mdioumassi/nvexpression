@@ -1,7 +1,9 @@
-
 {% if content.field_home_page['#title'] == "Page d'accueil" %}
 
   <div style="border:2px solid red">
     <div id="visuel">{{ content.field_visuel }}</div>
+  </div>
+  <div id="paragraphe">
+    {{ content.field_paragraphes }}
   </div>
 {% endif %}
